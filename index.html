@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Leyva | Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <!-- Enlaces corregidos para coincidir con los IDs de tus secciones -->
+            <li><a href="#sobre-mi">Acerca de mí</a></li>
+            <li><a href="#portafolio">Proyectos</a></li>
+            <!-- Como no hay sección de contacto, enlazamos directo a tu correo -->
+            <li><a href="mailto:angel.leyva.ln@gmail.com">Contacto</a></li> 
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN PRINCIPAL (PORTADA ÚNICA) -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Angel Leyva</h1>
+            <p class="subtitle">Ingeniero en Electrónica</p>
+            <!-- Enlace corregido para ir al portafolio -->
+            <a href="#portafolio" class="btn-solido">Ver Trabajo</a>
+        </div>
+        
+        <!-- INDICADOR DE SCROLL -->
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Sección de Portafolio -->
+    <section id="portafolio" class="portfolio-section">
+        <h2 class="section-title">Áreas de Especialidad</h2>
+        
+        <div class="grid-container">
+            <!-- Tarjeta CAD -->
+            <div class="card">
+                <div class="card-image" id="img-cad"></div>
+                <div class="card-content">
+                    <h3>Diseño CAD</h3>
+                    <p>Modelado 3D, diseño mecánico. Experiencia en el desarrollo de arquitecturas de hardware utilizando herramientas como Fusion, AutoCad y SolidWorks.</p>
+                    <a href="cad.html" class="btn-outline">Explorar Proyectos</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Electrónica -->
+            <div class="card">
+                <div class="card-image" id="img-electronica"></div>
+                <div class="card-content">
+                    <h3>Electrónica</h3>
+                    <p>Desarrollo de sistemas embebidos, programación de microcontroladores y diseño de redes de potencia para vehículos autónomos y sistemas de control.</p>
+                    <a href="electronica.html" class="btn-outline">Explorar Proyectos</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Programación -->
+            <div class="card">
+                <div class="card-image" id="img-programacion"></div>
+                <div class="card-content">
+                    <h3>Programación y Edge AI</h3>
+                    <p>Implementación de algoritmos de navegación, visión por computadora, e integración de frameworks para tareas de tracking automatizado.</p>
+                    <a href="programacion.html" class="btn-outline">Explorar Proyectos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Actualmente Aprendiendo -->
+    <section class="learning-section">
+        <h2 class="section-title">Actualmente Aprendiendo...</h2>
+        
+        <div class="learning-container">
+            <div class="learning-content">
+                <h3>Telecomunicaciones y Arquitecturas de Red (GPON)</h3>
+                <p>
+                    Expandiendo mi visión de la ingeniería hacia la infraestructura de conectividad. Estoy profundizando en el análisis y funcionamiento de <strong>Redes Ópticas Pasivas con Capacidad de Gigabit (GPON)</strong> y protocolos de transmisión de datos. 
+                </p>
+                <p>
+                    El objetivo de esta exploración es complementar mi experiencia en el diseño de hardware, electrónica de potencia y sistemas embebidos, escalando mi entendimiento hacia la capa física y de red para comprender integralmente cómo los sistemas electrónicos interactúan a alta velocidad. Mi enfoque práctico actual incluye:
+                </p>
+                <ul class="telecom-list">
+                    <li><strong>Infraestructura Óptica y RF:</strong> Desarrollo de arquitecturas de acceso GPON/OTN y ejecución de análisis de viabilidad de enlaces (Link Budget).</li>
+                    <li><strong>Análisis Espectral:</strong> Operación de Analizadores de Espectro en Tiempo Real (RTSA) para el procesamiento de datos IQ y validación física de señales.</li>
+                    <li><strong>Auditoría de Protocolos:</strong> Análisis en modelos OSI y TCP/IP mediante el uso de Wireshark y Nmap para diagnosticar anomalías en la red.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Reconocimientos y Herramientas -->
+    <section class="credentials-section">
+        <h2 class="section-title">Reconocimientos y Habilidades</h2>
+        
+        <div class="credentials-container">
+            <!-- Reconocimiento Principal -->
+            <div class="award-banner">
+                <span class="award-icon">🏆</span>
+                <div>
+                    <h3>Premio al Desempeño Sobresaliente</h3>
+                    <p>Examen Nacional CENEVAL EGEL (Junio 2026)</p>
+                </div>
+            </div>
+
+            <!-- Etiquetas de Software e Idiomas -->
+            <div class="tags-grid">
+                <div class="tag-group">
+                    <h4>Software y Diseño</h4>
+                    <span class="tag">Altium Designer</span>
+                    <span class="tag">SolidWorks</span>
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">LTSpice</span>
+                </div>
+                
+                <div class="tag-group">
+                    <h4>Idiomas</h4>
+                    <span class="tag">Español (Nativo)</span>
+                    <span class="tag">Inglés (Profesional)</span>
+                    <span class="tag">Alemán (Elemental)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Liderazgo -->
+    <section class="leadership-section">
+        <h2 class="section-title">Liderazgo y Trayectoria</h2>
+        
+        <div class="leadership-grid">
+           <div class="leadership-card">
+                <span class="date">Primavera 2026</span>
+                <!-- Un título que refleja tu rol real -->
+                <h3>Miembro de Equipo</h3>
+                <h4>Project L.I.L.Y. (USV)</h4>
+                <!-- Una descripción honesta sobre el trabajo en equipo multidisciplinario -->
+                <p>Desarrollo colaborativo del catamarán autónomo en equipo. Participación cruzada en el modelado estructural, integración de la arquitectura eléctrica y sensores.</p>
+            </div>
+
+            <div class="leadership-card">
+                <span class="date">Ago 2022 - Abr 2024</span>
+                <h3>Capitán de Equipo & Head of Electronics</h3>
+                <h4>Escudería Ecovolt CCM</h4>
+                <p>Liderazgo general y dirección técnica electrónica para el desarrollo del vehículo de competencia en Shell Eco-marathon.</p>
+            </div>
+
+            <div class="leadership-card">
+                <span class="date">Ene 2022 - Dic 2024</span>
+                <h3>Mentor Voluntario y Diseño</h3>
+                <h4>FIRST Robotics Nautilus 4010</h4>
+                <p>Guía técnica para estudiantes en diseño mecánico, transmisión de conocimientos y desarrollo de estrategias de competencia.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about-section">
+        <div class="about-container">
+            <div class="about-image-container">
+                <!-- Nombra tu foto de perfil como perfil.jpg y ponla en la carpeta -->
+                <img src="perfil.jpeg" alt="Angel Leyva" class="profile-pic">
+            </div>
+            <div class="about-text">
+                <h2>Acerca de mí</h2>
+                <p>
+                    Como Ingeniero en Electrónica, mi enfoque se centra en el diseño de hardware avanzado, sistemas embebidos y la autonomía. Liderar equipos de ingeniería y desarrollar tecnología para vehículos eléctricos y embarcaciones autónomas me ha enseñado que los resultados técnicos excepcionales nacen de principios sólidos. 
+                </p>
+                <p>
+                    Mis valores fundamentales son el <strong>orden</strong> en cada proceso, el <strong>respeto</strong> por mi equipo y la ingeniería, el impulso constante hacia el <strong>progreso</strong> y la <strong>innovación</strong>, y por encima de todo, una absoluta <strong>responsabilidad</strong> sobre mis actos y decisiones.
+                </p>
+                <!-- Botón de Descarga de CV -->
+                <a href="Angel_Leyva_Electrical_Engineer.pdf" download="Angel_Leyva_CV.pdf" class="btn-cv">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón Flotante de Contacto -->
+    <a href="mailto:angel.leyva.ln@gmail.com" class="floating-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        Trabajemos juntos
+    </a>
+    <footer>
+        <p>© 2026 Angel Leyva. angel.leyva.ln@gmail.com </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

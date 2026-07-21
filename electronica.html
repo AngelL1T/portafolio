@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónica | Angel Leyva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>Hardware y Electrónica</h1>
+            <p>Diseño de PCBs, sistemas de potencia, prototipado y debugging a nivel de componente</p>
+            <a href="index.html" class="btn-back">← Volver al inicio</a>
+        </div>
+    </header>
+
+    <!-- Galería de Proyectos -->
+    <section class="projects-gallery">
+        <div class="project-grid">
+
+            <!-- Proyecto: Embedded Security (Alemania) -->
+            <article class="project-card expandable">
+                <div class="project-summary">
+                    <div class="project-image" style="background-image: url('embedded-security.png');"></div>
+                    <div class="project-info">
+                        <h2>Seguridad en Sistemas Embebidos</h2>
+                        <span class="project-tag">Alemania | Ciberseguridad de Hardware</span>
+                        <p>Análisis de vulnerabilidades y seguridad en dispositivos de hardware. Implementación de técnicas de auditoría que incluyen la intercepción de mensajes a través de protocolos de comunicación y la extracción de datos en memoria (memory dumping) para interpretar el flujo de información y aplicar contramedidas en la placa electrónica.</p>
+                        <button class="btn-expand">Ver Caso de Estudio <span class="arrow">▼</span></button>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="details-content">
+                        <div class="tech-specs">
+                            <h3>Detalles Técnicos</h3>
+                            <ul>
+                                <li><strong>Contexto:</strong> Intercambio internacional en la Universidad de Ulm, Alemania (Oct 2025 - Mar 2026).</li>
+                                <li><strong>Enfoque:</strong> Auditoría de hardware y análisis de protocolos.</li>
+                                <li><strong>Técnicas:</strong> Intercepción de mensajes, memory dumping y mitigación de vulnerabilidades.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto: Control STM32 Acelerador -->
+            <article class="project-card expandable">
+                <div class="project-summary">
+                    <div class="project-image" style="background-image: url('stm32.jpg');"></div>
+                    <div class="project-info">
+                        <h2>Interfaz de Control ADC (STM32)</h2>
+                        <span class="project-tag">Sistemas Embebidos / Control</span>
+                        <p>Prototipado y depuración de una placa de control basada en un microcontrolador STM32. El sistema lee analógicamente (ADC) la posición de un gatillo acelerador basado en un sensor hall, acondiciona la señal y transmite los comandos de aceleración de forma segura hacia la etapa de potencia del vehículo.</p>
+                        <button class="btn-expand">Ver Caso de Estudio <span class="arrow">▼</span></button>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="details-content">
+                        <div class="tech-specs">
+                            <h3>Detalles Técnicos</h3>
+                            <ul>
+                                <li><strong>Microcontroladores:</strong> Familias STM32 y ESP32.</li>
+                                <li><strong>El Reto:</strong> Acondicionamiento de señales analógicas y transmisión segura hacia la etapa de potencia.</li>
+                                <li><strong>Aportación:</strong> Garantizar la fiabilidad en la lectura de aceleración para el funcionamiento seguro de vehículos eléctricos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto: Potencia Trifásica Eco-marathon -->
+            <article class="project-card expandable">
+                <div class="project-summary">
+                    <div class="project-image" style="background-image: url('trifasica.jpg');"></div>
+                    <div class="project-info">
+                        <h2>Inversor Trifásico de Potencia</h2>
+                        <span class="project-tag">Shell Eco-marathon | Debugging</span>
+                        <p>Prototipado, testeo y depuración intensiva de una placa de potencia trifásica para el sistema de tracción del vehículo de Escudería Ecovolt. Análisis de señales de conmutación, mitigación de ruido eléctrico y validación térmica bajo carga operativa.</p>
+                        <button class="btn-expand">Ver Caso de Estudio <span class="arrow">▼</span></button>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="details-content">
+                        <div class="tech-specs">
+                            <h3>Detalles Técnicos</h3>
+                            <ul>
+                                <li><strong>Mi Rol:</strong> Head of Electronics.</li>
+                                <li><strong>Enfoque:</strong> Diseño de electrónica de potencia, mitigación de interferencias electromagnéticas (EMI) y estrategias de gestión térmica.</li>
+                                <li><strong>Impacto:</strong> Desarrollo e implementación de un sistema de tracción altamente fiable, optimizado para operar bajo condiciones extremas y maximizar el rendimiento en competencias de eficiencia energética con un motor brushless.</li>
+                                <li><strong>Tecnologías:</strong> SolidWorks, MATLAB (Simulink), Altium, C++, LTSpice, Cadence, Caracterización de Motores, Instrumentación de Laboratorio (Osciloscopio, Analizador de Espectro, Generador de Funciones, Fuentes de Poder).</li>
+                            </ul>
+                        </div>
+                        <div class="mini-gallery">
+                            
+                            <img src="t1.jpg" alt="Acercamiento al diagrama" style="height: 150px; width: 30%; object-fit: cover; border-radius: 8px;">
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto: Placa de L.I.L.Y. -->
+            <article class="project-card expandable">
+                <div class="project-summary">
+                    <div class="project-image" style="background-image: url('l2.jpeg');"></div>
+                    <div class="project-info">
+                        <h2>Sistema Central L.I.L.Y.</h2>
+                        <span class="project-tag">Arquitectura de Hardware</span>
+                        <p>Validación y debugging de la placa electrónica principal para el vehículo autónomo de superficie (USV). Verificación de integridad de señal en buses de comunicación, enrutamiento de potencia para actuadores y solución de fallos en etapa de prototipo.</p>
+                        <button class="btn-expand">Ver Caso de Estudio <span class="arrow">▼</span></button>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="details-content">
+                        <div class="tech-specs">
+                            <h3>Detalles Técnicos</h3>
+                            <ul>
+                                <li><strong>Mi Rol:</strong> Ingeniero Multidisciplinario.</li>
+                                <li><strong>El Reto:</strong> Garantizar la integridad de las señales y optimizar el enrutamiento (routing) del hardware para operar de forma fiable en un entorno acuatico autónomo.</li>
+                                <li><strong>Aportación:</strong> Diagnóstico ágil de fallos (troubleshooting) y ensamble de precisión (SMD/THT), logrando la estabilización de la placa de control central bajo estrictos límites de tiempo.</li>
+                            </ul>
+                        </div>
+                        <div class="mini-gallery">
+                            
+                            <img src="placa-lily.png" alt="Acercamiento al diagrama" style="height: 150px; width: 30%; object-fit: cover; border-radius: 8px;">
+                            
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto: ATmega16 Cámara Térmica -->
+            <article class="project-card expandable">
+                <div class="project-summary">
+                    <div class="project-image" style="background-image: url('atmega.png');"></div>
+                    <div class="project-info">
+                        <h2>Control de Cámara Térmica</h2>
+                        <span class="project-tag">Diseño PCB / ATmega16</span>
+                        <p>Diseño y ruteo de una placa de control basada en el microcontrolador ATmega16 para la gestión, configuración y lectura de datos de un sensor térmico. Integración de los protocolos de comunicación necesarios, así como el diseño y simulación del algoritmo de control para garantizar el calentamiento preciso y la estabilización térmica de la cámara.</p>
+                        <button class="btn-expand">Ver Caso de Estudio <span class="arrow">▼</span></button>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="details-content">
+                        <div class="tech-specs">
+                            <h3>Detalles Técnicos</h3>
+                            <ul>
+                                <li><strong>Hardware:</strong> Microcontrolador ATmega16 y diseño de etapas de acondicionamiento de señales para sensores.</li>
+                                <li><strong>Integración y Control:</strong> Modelado matemático de la planta y diseño del sistema de control. Desarrollo de una etapa rectificadora para la alimentación estable del sistema, e integración de las etapas digital y de potencia utilizando tierras aisladas.</li>
+                                <li><strong>Tecnologías:</strong> MATLAB (Simulink), Altium Designer, C++, LTSpice, Caracterización de Planta, Instrumentación de Laboratorio (Osciloscopio, Analizador de Espectro, Generador de Funciones, Fuentes de Poder).</li>
+                            </ul>
+                        </div>
+                        <div class="mini-gallery">
+                            
+                            <img src="c1.png" alt="Acercamiento al diagrama" style="height: 150px; width: 30%; object-fit: cover; border-radius: 8px;">
+                            
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto: Placa Rectificadora -->
+            <article class="project-card expandable">
+                <div class="project-summary">
+                    <div class="project-image" style="background-image: url('rectificador.png');"></div>
+                    <div class="project-info">
+                        <h2>Placa Rectificadora</h2>
+                        <span class="project-tag">Electrónica Analógica</span>
+                        <p>Diseño de circuito e implementación de una placa rectificadora. Cálculo y dimensionamiento de pistas para soportar los picos de corriente, junto con la correcta selección de semiconductores para maximizar la eficiencia de conversión y minimizar pérdidas térmicas.</p>
+                        
+                    </div>
+                </div>
+                
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Angel Leyva. angel.leyva.ln@gmail.com </p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
