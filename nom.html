@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOM-001-SEDE Technical Note | Angel Leyva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado de la página de la Nota Técnica -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>Technical Note: NOM-001-SEDE</h1>
+            <p>Applied Guidelines for Commercial PV, Storage, and EV Charging Systems</p>
+            <a href="index.html" class="btn-back">← Volver al inicio</a>
+        </div>
+    </header>
+
+    <!-- Introducción y Disclaimer -->
+    <section style="max-width: 1200px; margin: 20px auto 30px auto; padding: 20px; background-color: #f8f9fa; border-left: 4px solid #cc0000; border-radius: 4px;">
+        
+        <p style="margin-bottom: 15px; line-height: 1.6; color: #333;">
+            <strong>Contexto de esta publicación:</strong> Escribí este documento para mi portafolio profesional con un objetivo claro: demostrar mi conocimiento de la NOM-001-SEDE y documentar los aspectos críticos que un ingeniero debe tener en el radar (y consultar directamente en la norma) al momento de conceptualizar la arquitectura de proyectos fotovoltaicos, de almacenamiento y de recarga de vehículos eléctricos (EVSE).
+        </p>
+
+        <div style="font-size: 0.85em; color: #444; background-color: #e2e3e5; padding: 12px; border-radius: 4px; line-height: 1.5; margin: 0; border: 1px solid #d6d8db;">
+            <strong>⚠️ AVISO LEGAL Y DE RESPONSABILIDAD:</strong> Este texto es estrictamente un ejercicio demostrativo de mis competencias técnicas. <strong>No es información oficial, no es un manual de diseño y no constituye asesoría ni recomendación profesional.</strong> Bajo ninguna circunstancia este resumen sustituye al documento original. Para cualquier diseño, cálculo o ejecución de un proyecto eléctrico, es obligatorio remitirse al texto íntegro y vigente de la Norma Oficial Mexicana (NOM-001-SEDE) publicado en el Diario Oficial de la Federación (DOF) y contar con la validación pertinente.
+        </div>
+
+    </section>
+
+    <!-- Contenedor de los Artículos Técnicos -->
+    <section class="projects-gallery">
+        <div class="project-grid">
+
+            <!-- Sección 1: EVSE -->
+            <article class="project-card">
+                <div class="project-summary">
+                    <div class="project-info" style="width: 100%;">
+                        <h2>1. Infraestructura de Carga para Vehículos Eléctricos (EVSE)</h2>
+                        <span class="project-tag">Artículo 625</span>
+                        <div class="tech-specs" style="margin-top: 15px;">
+                            <ul>
+                                <li><strong>Cargas Continuas:</strong> El <strong>Artículo 625-14</strong> establece que la recarga de un vehículo eléctrico se considera como una carga continua. Por ello, el <strong>Artículo 625-21</strong> exige que la protección contra sobrecorriente y los conductores se dimensionen para soportar al menos el 125% de estas cargas continuas.</li>
+                                <li><strong>Medios de Desconexión:</strong> Para estaciones de carga, el <strong>Artículo 625-23</strong> indica que si el equipo de alimentación es de más de 60 amperes o más de 150 volts a tierra, debe contar con un medio de desconexión instalado en un lugar fácilmente accesible y que tenga la capacidad de quedar bloqueado en posición abierta.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sección 2: PV -->
+            <article class="project-card">
+                <div class="project-summary">
+                    <div class="project-info" style="width: 100%;">
+                        <h2>2. Sistemas Solares Fotovoltaicos (PV)</h2>
+                        <span class="project-tag">Artículo 690</span>
+                        <div class="tech-specs" style="margin-top: 15px;">
+                            <ul>
+                                <li><strong>Voltaje Máximo del Sistema:</strong> De acuerdo con el <strong>Artículo 690-7</strong>, la tensión máxima en corriente continua se calcula sumando el voltaje de circuito abierto de los módulos en serie y aplicando un factor de corrección térmico (Tabla 690-7) basado en la temperatura ambiente más baja esperada en la zona, ya que el frío eleva el voltaje que entregan los paneles.</li>
+                                <li><strong>Protección contra Sobrecorriente:</strong> Según el <strong>Artículo 690-8(b)(1)</strong>, los dispositivos de sobrecorriente (como fusibles o pastillas) en los circuitos fotovoltaicos deben seleccionarse para conducir no menos del 125% de la corriente máxima calculada del circuito.</li>
+                                <li><strong>Puesta a Tierra (Grounding):</strong> Para evitar fallas a tierra, el <strong>Artículo 690-43(a)</strong> exige de manera estricta que todas las partes metálicas expuestas que no porten corriente, incluyendo bastidores, estructuras de módulos fotovoltaicos y equipos eléctricos, estén conectadas a un conductor de puesta a tierra.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sección 3: Conductores y Canalizaciones -->
+            <article class="project-card">
+                <div class="project-summary">
+                    <div class="project-info" style="width: 100%;">
+                        <h2>3. Conductores y Canalizaciones</h2>
+                        <span class="project-tag">Artículo 310 y Capítulo 9</span>
+                        <div class="tech-specs" style="margin-top: 15px;">
+                            <ul>
+                                <li><strong>Factores de Corrección por Temperatura:</strong> Indispensable para trazados en techos. El <strong>Artículo 310-15(b)(2)</strong> establece que cuando la temperatura ambiente excede los 30 °C, la ampacidad (capacidad de conducción) del cable disminuye, por lo que es obligatorio aplicar las tablas de corrección de temperatura para evitar sobrecalentamientos.</li>
+                                <li><strong>Factores de Agrupamiento:</strong> El <strong>Artículo 310-15(b)(3)(a)</strong> dicta que si vas a pasar más de 3 conductores portadores de corriente por la misma tubería o canalización, debes castigar (reducir) la ampacidad permisible de cada conductor aplicando los factores de ajuste de las tablas correspondientes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sección 4: Almacenamiento -->
+            <article class="project-card">
+                <div class="project-summary">
+                    <div class="project-info" style="width: 100%;">
+                        <h2>4. Sistemas de Almacenamiento de Energía (Baterías)</h2>
+                        <span class="project-tag">Artículo 706 / Artículo 480</span>
+                        <div class="tech-specs" style="margin-top: 15px;">
+                            <ul>
+                                <li><strong>Espacios de Trabajo (Clearances):</strong> Para cuartos de baterías o contenedores tipo Megapack, el <strong>Artículo 480-9(c)</strong> exige respetar los espacios libres de trabajo especificados desde el borde de los bastidores para el mantenimiento seguro del personal.</li>
+                                <li><strong>Ventilación:</strong> El <strong>Artículo 480-10</strong> obliga a contar con ventilación o válvulas de alivio de presión para prevenir cualquier riesgo de acumulación excesiva de gases inflamables o explosiones.</li>
+                                <li><strong>Protección contra cortocircuitos:</strong> Se exige protección y desconexión segura cerca del banco de baterías; el <strong>Artículo 240-21(h)</strong> indica que la protección contra sobrecorriente debe instalarse lo más cerca posible de las terminales de la batería para evitar cortocircuitos catastróficos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Angel Leyva. angel.leyva.ln@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
