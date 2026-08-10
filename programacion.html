@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programación y Edge AI | Angel Leyva</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Estilos para el botón de YouTube enorme -->
+    <style>
+        .btn-youtube-massive {
+            display: block;
+            margin-top: 20px;
+            padding: 16px 24px;
+            background-color: #FF0000; /* Rojo YouTube */
+            color: white !important;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-youtube-massive:hover {
+            background-color: #CC0000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(255, 0, 0, 0.4);
+        }
+    </style>
 </head>
 <body>
 
@@ -21,21 +44,19 @@
     <section class="projects-gallery">
         <div class="project-grid">
 
-            <!-- Proyecto: Nilo AI Agent -->
+            <!-- Proyecto: Nilo AI Agent (CON BOTÓN ENORME) -->
             <article class="project-card">
-                <!-- Contenedor de video responsivo para mantener el formato de la tarjeta -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px 8px 0 0;">
-                    <iframe src="https://www.youtube.com/embed/kBf5zdiVOtQ" 
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                            title="Nilo: Autonomous AI Desktop Agent" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
+                <!-- Obtenemos la miniatura oficial del video de YouTube automáticamente -->
+                <div class="project-image" style="background-image: url('https://img.youtube.com/vi/kBf5zdiVOtQ/hqdefault.jpg'); background-size: cover; background-position: center;"></div>
                 <div class="project-info">
                     <h2>Nilo: Autonomous AI Desktop Agent</h2>
                     <span class="project-tag">Python & Gemini API</span>
                     <p>Desarrollo de software de automatización independiente que construye secuencias de tareas mediante el análisis del contenido activo en la pantalla. El sistema aprovecha la inteligencia artificial generativa a través de la API de Gemini para interactuar con la interfaz del entorno de escritorio de forma autónoma.</p>
+                    
+                    <!-- BOTÓN GIGANTE -->
+                    <a href="https://youtu.be/kBf5zdiVOtQ?si=0w02WD2mfdKsAfrk" target="_blank" rel="noopener noreferrer" class="btn-youtube-massive">
+                        ▶ VER DEMOSTRACIÓN EN YOUTUBE
+                    </a>
                 </div>
             </article>
 
